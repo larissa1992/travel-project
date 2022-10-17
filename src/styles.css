@@ -2,7 +2,7 @@ body {
   font-family: "Poppins" sans-serif;
 }
 .container {
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
 }
 
@@ -87,7 +87,9 @@ section a {
 section.secondary {
   background: #f8f8f8;
 }
-
+section.gallery {
+  margin: 0;
+}
 .img-responsive {
   border-radius: 20px;
   display: block;
@@ -189,7 +191,6 @@ footer {
 }
 footer p {
   text-align: center;
-  margin-bottom: -10px;
 }
 footer p a {
   color: white;
@@ -212,11 +213,26 @@ footer a:hover {
   header h3 {
     font-size: 12px;
   }
+  footer {
+    margin-top: 20px;
+  }
   .grid {
     grid-template-columns: 1fr;
     grid-gap: 30px;
   }
   section {
     padding: 30px;
+  }
+  .img-responsive {
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .button {
+    margin: 0 auto;
+  }
+  .btn .button:hover {
+    color: #272044;
+    background-color: #f8f8f8;
   }
 }
