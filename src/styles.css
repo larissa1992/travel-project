@@ -64,6 +64,7 @@ main h3 {
   margin: 50px 0;
   padding: 0;
 }
+
 section {
   max-width: 100%;
   margin: 0 auto;
@@ -88,7 +89,6 @@ section.secondary {
 }
 
 .img-responsive {
-  width: 100%;
   border-radius: 20px;
   display: block;
 }
@@ -130,16 +130,52 @@ section.secondary {
   text-align: center;
   letter-spacing: 3px;
   text-transform: uppercase;
-  padding: 6px;
   background-color: #272044;
   text-decoration: none;
-  margin: 0 auto;
   max-width: fit-content;
   padding: 10px 25px;
+}
+.btn {
+  display: block;
+  max-width: fit-content;
+  margin: 40px auto;
+  padding: 10px 25px;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  background-color: #272044;
+  text-decoration: none;
 }
 
 .card-footer {
   padding: 50px;
+}
+.content_img {
+  position: relative;
+}
+.content_img div {
+  position: absolute;
+  bottom: 250px;
+  right: 170px;
+  background: black;
+  color: white;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: visibility 0s, opacity 0.5s linear;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.content_img:hover {
+  cursor: pointer;
+}
+
+.content_img:hover div {
+  visibility: visible;
+  opacity: 0.7;
 }
 footer {
   background-image: linear-gradient(
