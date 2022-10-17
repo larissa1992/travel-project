@@ -82,6 +82,10 @@ section a {
   color: #272044;
 }
 
+img-responsive {
+  max-width: 100%;
+  border-radius: 20px;
+}
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
