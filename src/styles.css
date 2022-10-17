@@ -50,13 +50,13 @@ header a {
   padding: 12px 20px;
   background-color: white;
 }
+
 main h2 {
   text-align: center;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 5px;
-  color: #272044;
   opacity: 0.3;
   margin: 0;
 }
@@ -68,6 +68,7 @@ section {
   max-width: 100%;
   margin: 0 auto;
   padding: 40px;
+  color: #272044;
 }
 section ul {
   padding: 0;
@@ -87,7 +88,7 @@ section.secondary {
 }
 
 .img-responsive {
-  max-width: 100%;
+  width: 100%;
   border-radius: 20px;
   display: block;
 }
@@ -133,6 +134,8 @@ section.secondary {
   background-color: #272044;
   text-decoration: none;
   margin: 0 auto;
+  max-width: fit-content;
+  padding: 10px 25px;
 }
 
 .card-footer {
@@ -179,8 +182,5 @@ footer a:hover {
   }
   section {
     padding: 30px;
-  }
-  .img-responsive {
-    margin-left: 50px;
   }
 }
