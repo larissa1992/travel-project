@@ -65,7 +65,7 @@ main h3 {
   padding: 0;
 }
 section {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 40px;
 }
@@ -82,10 +82,14 @@ section a {
   color: #272044;
 }
 
+section.secondary {
+  background: #f8f8f8;
+}
+
 .img-responsive {
   max-width: 100%;
   border-radius: 20px;
-  height: 100%;
+  display: block;
 }
 .grid {
   display: grid;
@@ -97,7 +101,11 @@ section a {
   grid-template-columns: 1fr 2fr;
   grid-gap: 20px;
 }
-
+.grid-3-colomns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
 .inner-sections {
   background: radial-gradient(
     circle at 18.7% 37.8%,
@@ -109,7 +117,27 @@ section a {
   color: #272044;
   text-align: center;
 }
+.text-center {
+  text-align: center;
+}
+.button {
+  display: block;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 6px;
+  background-color: #272044;
+  text-decoration: none;
+  margin: 0 auto;
+}
 
+.card-footer {
+  padding: 50px;
+}
 footer {
   background-image: linear-gradient(
       rgba(39, 32, 68, 0.7),
