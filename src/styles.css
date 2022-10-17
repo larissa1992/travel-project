@@ -1,7 +1,66 @@
-h1 {
-  font-family: "Poppins";
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+body {
+  font-family: "Poppins" sans-serif;
+}
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+    url("../images/Castelul-Corvin.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 160px 0;
+}
+
+header h1 {
   font-style: normal;
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 1;
+  margin: 30px 0;
+}
+
+header h2 {
   font-weight: 700;
-  font-size: 96px;
-  line-height: 144px;
+  font-size: 30px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+header h3 {
+  font-weight: 600px;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 5px;
+}
+
+header a {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #272044;
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 20px;
+  background-color: white;
+}
+
+@media (max-width: 900px) {
+  header {
+    padding: 60px 0;
+  }
+  header h1 {
+    font-size: 60px;
+  }
+  header h2 {
+    font-size: 25px;
+  }
+  header h3 {
+    font-size: 12px;
+  }
 }
