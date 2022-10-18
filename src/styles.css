@@ -141,6 +141,7 @@ section.gallery {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  text-align: center;
 }
 
 .card-footer {
