@@ -93,6 +93,8 @@ section.gallery {
 .img-responsive {
   border-radius: 20px;
   display: block;
+  max-width: 100%;
+  margin: 0 auto;
 }
 .grid {
   display: grid;
