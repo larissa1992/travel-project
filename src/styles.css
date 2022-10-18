@@ -216,6 +216,9 @@ footer a:hover {
   header h3 {
     font-size: 12px;
   }
+  h4 {
+    font-size: 14px;
+  }
   footer {
     margin-top: 20px;
   }
