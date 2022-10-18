@@ -124,33 +124,21 @@ section.gallery {
   text-align: center;
 }
 .button {
-  display: block;
   color: white;
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
-  text-align: center;
   letter-spacing: 3px;
   text-transform: uppercase;
   background-color: #272044;
   text-decoration: none;
   max-width: fit-content;
   padding: 10px 25px;
-}
-.btn {
-  display: block;
-  max-width: fit-content;
-  margin: 40px auto;
-  padding: 10px 25px;
-  color: white;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 21px;
-  text-align: center;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  background-color: #272044;
-  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .card-footer {
@@ -169,6 +157,7 @@ section.gallery {
   visibility: hidden;
   -webkit-transition: visibility 0s, opacity 0.5s linear;
   transition: visibility 0s, opacity 0.5s linear;
+  padding: 8px 5px;
 }
 
 .content_img:hover {
@@ -178,6 +167,16 @@ section.gallery {
 .content_img:hover div {
   visibility: visible;
   opacity: 0.7;
+}
+.embeds {
+  width: 100%;
+  aspect-ratio: 21/9;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+.margin-top {
+  margin-top: 40px;
+  margin-bottom: 30px;
 }
 footer {
   background-image: linear-gradient(
@@ -226,13 +225,17 @@ footer a:hover {
   .img-responsive {
     margin: 0 auto;
     padding: 0;
+    max-width: 100%;
   }
 
   .button {
     margin: 0 auto;
   }
-  .btn .button:hover {
+  .button:hover {
     color: #272044;
     background-color: #f8f8f8;
+  }
+  .embeds {
+    aspect-ratio: 1/1;
   }
 }
